@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-blue-100 flex justify-center mt-50">
+
+    <div class="bg-white rounded-3xl shadow-md w-full max-w-4xl grid md:grid-cols-2">
+
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-bold">Mortgage Calculator</h2>
+                <a href="#" class="text-sm text-gray-500">Clear All</a>
+            </div>
+
+            <label class="block mb-1 text-sm">Mortgage Amount</label>
+            <div class="flex mb-4">
+                <span class="bg-blue-50 border border-gray-300 px-3 py-2">£</span>
+                <input type="number" class="border border-gray-300 p-2 w-full" placeholder="Enter amount">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block mb-1 text-sm">Mortgage Term</label>
+                    <div class="flex">
+                        <input type="number" class="border border-gray-300 p-2 w-full" placeholder="0">
+                        <span class="bg-blue-50 border border-gray-300 px-3 py-2">years</span>
+                    </div>
+                </div>
+                <div>
+                    <label class="block mb-1 text-sm">Interest Rate</label>
+                    <div class="flex">
+                        <input type="number" class="border border-gray-300 p-2 w-full" placeholder="0">
+                        <span class="bg-blue-50 border border-gray-300 px-3 py-2">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <label class="block mb-2 text-sm">Mortgage Type</label>
+            <div class="mb-4">
+                <label class="block">
+                    <input type="radio" name="type" class="mr-2"> Repayment
+                </label>
+                <label class="block">
+                    <input type="radio" name="type" class="mr-2"> Interest Only
+                </label>
+            </div>
+
+            <button class="bg-yellow-400 w-full py-2 font-semibold rounded">Calculate Repayments</button>
+        </div>
+
+        <div
+            class="bg-blue-900 text-white flex flex-col items-center justify-center p-6 rounded-r-4xl rounded-bl-[15%]">
+            <div class="w-16 h-16 bg-yellow-400 mb-4"></div>
+            <h3 class="font-bold mb-2">Results shown here</h3>
+            <p class="text-sm text-center text-blue-200">
+                Complete the form and click “calculate repayments” to see your results.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
